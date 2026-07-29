@@ -115,3 +115,102 @@ header{
 .btn:hover{
     background:#c89b3c;
 }
+.menu-section{
+    padding:100px 80px;
+    text-align:center;
+}
+
+.menu-section h2{
+    font-size:42px;
+    color:#3E2723;
+    margin-bottom:60px;
+}
+
+.coffee-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.coffee-card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.coffee-card:hover{
+    transform:translateY(-10px);
+}
+
+.coffee-card h3{
+    color:#3E2723;
+    margin-bottom:20px;
+}
+
+.coffee-card p{
+    color:#666;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.coffee-card span{
+    font-size:22px;
+    color:#C89B3C;
+    font-weight:bold;
+}
+.menu-section{
+    padding:80px;
+    text-align:center;
+    background:white;
+}
+
+.menu-section h2{
+    font-size:42px;
+    color:#3E2723;
+}
+
+.menu-subtitle{
+    color:#777;
+    margin:20px 0 50px;
+    font-size:18px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:320px;
+    background:#F8F5F2;
+    padding:35px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.card p{
+    color:#666;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.card span{
+    display:block;
+    font-size:24px;
+    color:#C89B3C;
+    font-weight:bold;
+    margin-bottom:25px;
+}
