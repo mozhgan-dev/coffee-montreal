@@ -5,122 +5,113 @@
 }
 
 body{
-
     font-family:Arial, Helvetica, sans-serif;
-
+    background:#F8F5F2;
 }
 
 header{
+    background:#2B1D16;
+}
 
+.navbar{
     height:80px;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
     padding:0 60px;
-
-    background:#2b1d16;
-
 }
 
 .logo{
-
     color:white;
-
     font-size:28px;
-
     font-weight:bold;
-
 }
 
-nav{
-
+.menu{
     display:flex;
-
-    gap:30px;
-
+    list-style:none;
+    gap:35px;
 }
 
-nav a{
-
+.menu a{
     color:white;
-
     text-decoration:none;
-
     font-size:18px;
-
+    font-weight:600;
 }
 
-nav a:hover{
-
-    color:#d8b26e;
-
+.menu a:hover{
+    color:#C89B3C;
 }
 .hero{
-
-    height:90vh;
-
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
 
-    text-align:center;
-
-    background:#faf8f5;
-
+    padding:80px;
 }
 
-.hero-content{
-
-    width:700px;
-
+.hero-text{
+    width:50%;
 }
 
-.hero h1{
+.hero-image{
+    width:45%;
+}
 
+.hero-image img{
+    width:100%;
+}
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    min-height:calc(100vh - 80px);
+
+    padding:80px;
+}
+.hero-text h1{
     font-size:64px;
-
-    color:#3e2723;
-
-    margin-bottom:20px;
-
+    color:#3E2723;
+    line-height:1.1;
+    margin-bottom:25px;
 }
 
-.hero p{
-
+.hero-text p{
     font-size:22px;
-
     color:#555;
-
     line-height:1.8;
-
     margin-bottom:40px;
-
 }
-
+.hero-image{
+    display:flex;
+    justify-content:center;
+}
 .btn{
-
     display:inline-block;
-
     padding:16px 40px;
-
-    background:#3e2723;
-
+    background:#3E2723;
     color:white;
-
     text-decoration:none;
-
     border-radius:50px;
-
     transition:.3s;
-
 }
 
 .btn:hover{
+    background:#C89B3C;
+    transform:translateY(-3px);
+}
+.btn{
+    display:inline-block;
+    padding:16px 40px;
+    background:#3e2723;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.3s;
+}
 
+.btn:hover{
     background:#c89b3c;
-
 }
