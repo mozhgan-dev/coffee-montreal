@@ -4,98 +4,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Coffee Montreal</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 
-<body>
-<header>
-    <nav class="navbar">
-        <div class="logo">☕ Coffee Montreal</div>
+<body id="home">
 
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
 
-<section class="hero">
+            <div class="logo">
+                ☕ Coffee Montreal
+            </div>
 
-    <div class="hero-text">
-    <h1>Fresh Coffee Every Morning</h1>
+            <ul class="menu">
+                 <li><a href="#home">Home</a></li>
+                 <li><a href="#menu">Menu</a></li>
+                 <li><a href="#about">About</a></li>
+                 <li><a href="#contact">Contact</a></li>
+            </ul>
 
-    <p>
-        Experience handcrafted coffee made with passion in the heart of Montreal.
-    </p>
+        </nav>
+    </header>
 
-    <a href="#" class="btn">Order Now</a>
-</div>
 
-<div class="hero-image">
-    <img src="assets/images/coffee.png" alt="Coffee">
-</div>
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>Fresh Coffee Every Morning</h1>
+
+            <p>
+                Experience handcrafted coffee made with passion
+                in the heart of Montreal.
+            </p>
+
+            <a href="#menu" class="btn">View Menu</a>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img
+                src="assets/images/hero-coffee.jpg"
+                alt="Fresh coffee at Coffee Montreal"
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+
+        <h2>Our Menu</h2>
+
+        <p class="menu-subtitle">
+            Discover our handcrafted coffee selection
+        </p>
+
+
+        <div class="cards">
+
+            <!-- Espresso -->
+            <div class="card">
+
+                <img
+                    src="assets/images/espresso.png"
+                    alt="Espresso coffee"
+                    class="coffee-image"
+                >
+
+                <h3>☕ Espresso</h3>
+
+                <p>
+                    Rich and bold espresso made from premium beans.
+                </p>
+
+                <span>$3.50</span>
+
+                <a href="#" class="btn">Order</a>
+
+            </div>
+
+
+            <!-- Latte -->
+            <div class="card">
+
+                <img
+                    src="assets/images/latte.png"
+                    alt="Latte coffee"
+                    class="coffee-image"
+                >
+
+                <h3>🥛 Latte</h3>
+
+                <p>
+                    Smooth espresso with steamed milk.
+                </p>
+
+                <span>$4.50</span>
+
+                <a href="#" class="btn">Order</a>
+
+            </div>
+
+
+            <!-- Cappuccino -->
+            <div class="card">
+
+                <img
+                    src="assets/images/cappuccino.png"
+                    alt="Cappuccino coffee"
+                    class="coffee-image"
+                >
+
+                <h3>🤎 Cappuccino</h3>
+
+                <p>
+                    Espresso topped with creamy milk foam.
+                </p>
+
+                <span>$4.00</span>
+
+                <a href="#" class="btn">Order</a>
+
+            </div>
+
+        </div>
+
+    </section>
+<section class="about" id="about">
+
+    <div class="about-image">
+        <img src="assets/images/mike-kenneally-tNALoIZhqVM-unsplash.jpg" alt="Coffee Montreal cafe">
+    </div>
+
+    <div class="about-text">
+
+        <h2>About Coffee Montreal</h2>
+
+        <p>
+            Coffee Montreal is a warm and modern coffee experience
+            inspired by the heart of Montreal.
+        </p>
+
+        <p>
+            We believe every cup should be crafted with care,
+            quality ingredients and a passion for great coffee.
+        </p>
+
+        <a href="#" class="btn">Learn More</a>
+
+    </div>
+
 </section>
+    <!-- Testimonials -->
+<section class="testimonials">
 
-<section class="menu-section">
-    <h2>Our Menu</h2>
+    <h2>What Our Customers Say</h2>
 
-    <p class="menu-subtitle">
-        Discover our handcrafted coffee selection
+    <p class="section-subtitle">
+        A few words from our coffee lovers
     </p>
 
-    <div class="cards">
+    <div class="testimonial-cards">
 
-        <div class="card">
-
-            <h3>☕ Espresso</h3>
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
 
             <p>
-                Rich and bold espresso made from premium beans.
+                “Amazing coffee and a wonderful atmosphere.
+                The perfect place to start my morning.”
             </p>
 
-            <span>$3.50</span>
-
-            <a href="#" class="btn">Order</a>
-
+            <h3>Emma</h3>
         </div>
 
-        <div class="card">
-
-            <h3>🥛 Latte</h3>
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
 
             <p>
-                Smooth espresso with steamed milk.
+                “The latte is smooth, fresh and beautifully made.
+                One of my favorite coffee spots.”
             </p>
 
-            <span>$4.50</span>
-
-            <a href="#" class="btn">Order</a>
-
+            <h3>Daniel</h3>
         </div>
 
-        <div class="card">
-
-            <h3>🤎 Cappuccino</h3>
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
 
             <p>
-                Espresso topped with creamy milk foam.
+                “Great coffee, friendly service and a cozy feeling.
+                I will definitely come back.”
             </p>
 
-            <span>$4.00</span>
-
-            <a href="#" class="btn">Order</a>
-
+            <h3>Sophie</h3>
         </div>
 
     </div>
 
 </section>
 
+
+<!-- Contact -->
+<section class="contact" id="contact">
+
+    <div class="contact-content">
+
+        <h2>Visit Coffee Montreal</h2>
+
+        <p>
+            Start your day with freshly crafted coffee
+            in a warm and welcoming atmosphere.
+        </p>
+
+        <div class="contact-info">
+            <p>📍 Montreal, Quebec</p>
+            <p>☕ Open Daily: 7:00 AM – 8:00 PM</p>
+            <p>✉️ hello@coffeemontreal.com</p>
+        </div>
+
+        <a href="#" class="btn">Contact Us</a>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-logo">
+            ☕ Coffee Montreal
+        </div>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>  
+
+        <p>
+            © 2026 Coffee Montreal. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
 </body>
 
 </html>

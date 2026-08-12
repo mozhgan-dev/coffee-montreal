@@ -1,13 +1,27 @@
+/* =========================
+   General
+========================= */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family:Arial, Helvetica, sans-serif;
     background:#F8F5F2;
+    color:#3E2723;
 }
+
+
+/* =========================
+   Header
+========================= */
 
 header{
     background:#2B1D16;
@@ -15,9 +29,14 @@ header{
 
 .navbar{
     height:80px;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
+
+    max-width:1400px;
+    margin:auto;
+
     padding:0 60px;
 }
 
@@ -29,24 +48,44 @@ header{
 
 .menu{
     display:flex;
-    list-style:none;
+    align-items:center;
+
     gap:35px;
+
+    list-style:none;
 }
 
 .menu a{
     color:white;
+
     text-decoration:none;
+
     font-size:18px;
     font-weight:600;
+
+    transition:.3s;
 }
 
 .menu a:hover{
     color:#C89B3C;
 }
+
+
+/* =========================
+   Hero
+========================= */
+
 .hero{
+    min-height:calc(100vh - 80px);
+
     display:flex;
     justify-content:space-between;
     align-items:center;
+
+    gap:60px;
+
+    max-width:1400px;
+    margin:auto;
 
     padding:80px;
 }
@@ -55,162 +94,602 @@ header{
     width:50%;
 }
 
-.hero-image{
-    width:45%;
-}
-
-.hero-image img{
-    width:100%;
-}
-.hero{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    min-height:calc(100vh - 80px);
-
-    padding:80px;
-}
 .hero-text h1{
     font-size:64px;
-    color:#3E2723;
     line-height:1.1;
+
+    color:#3E2723;
+
     margin-bottom:25px;
 }
 
 .hero-text p{
-    font-size:22px;
-    color:#555;
+    max-width:560px;
+
+    font-size:21px;
     line-height:1.8;
-    margin-bottom:40px;
+
+    color:#666;
+
+    margin-bottom:35px;
 }
+
 .hero-image{
+    width:45%;
+
     display:flex;
     justify-content:center;
 }
+
+.hero-image img{
+    width:100%;
+    max-width:560px;
+
+    display:block;
+
+    border-radius:28px;
+
+    box-shadow:0 20px 50px rgba(62,39,35,.18);
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
 .btn{
     display:inline-block;
-    padding:16px 40px;
+
+    padding:16px 38px;
+
     background:#3E2723;
     color:white;
+
     text-decoration:none;
+
     border-radius:50px;
+
+    font-weight:600;
+
     transition:.3s;
 }
 
 .btn:hover{
     background:#C89B3C;
+
     transform:translateY(-3px);
 }
-.btn{
-    display:inline-block;
-    padding:16px 40px;
-    background:#3e2723;
-    color:white;
-    text-decoration:none;
-    border-radius:50px;
-    transition:.3s;
-}
 
-.btn:hover{
-    background:#c89b3c;
-}
+
+/* =========================
+   Menu Section
+========================= */
+
 .menu-section{
     padding:100px 80px;
+
     text-align:center;
-}
 
-.menu-section h2{
-    font-size:42px;
-    color:#3E2723;
-    margin-bottom:60px;
-}
-
-.coffee-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
-}
-
-.coffee-card{
-    background:white;
-    padding:35px;
-    border-radius:20px;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.coffee-card:hover{
-    transform:translateY(-10px);
-}
-
-.coffee-card h3{
-    color:#3E2723;
-    margin-bottom:20px;
-}
-
-.coffee-card p{
-    color:#666;
-    line-height:1.7;
-    margin-bottom:20px;
-}
-
-.coffee-card span{
-    font-size:22px;
-    color:#C89B3C;
-    font-weight:bold;
-}
-.menu-section{
-    padding:80px;
-    text-align:center;
     background:white;
 }
 
 .menu-section h2{
-    font-size:42px;
+    font-size:44px;
+
     color:#3E2723;
+
+    margin-bottom:15px;
 }
 
 .menu-subtitle{
     color:#777;
-    margin:20px 0 50px;
+
     font-size:18px;
+
+    margin-bottom:55px;
 }
 
+
+/* =========================
+   Coffee Cards
+========================= */
+
 .cards{
+    max-width:1100px;
+    margin:auto;
+
     display:flex;
     justify-content:center;
+
     gap:30px;
+
     flex-wrap:wrap;
 }
 
 .card{
     width:320px;
+    min-height:500px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding:30px;
+
     background:#F8F5F2;
-    padding:35px;
-    border-radius:20px;
+
+    border-radius:24px;
+
+    box-shadow:0 10px 30px rgba(62,39,35,.08);
+
     transition:.3s;
 }
 
 .card:hover{
     transform:translateY(-10px);
+
+    box-shadow:0 18px 40px rgba(62,39,35,.15);
+}
+
+.coffee-image{
+    width:180px;
+    height:180px;
+
+    object-fit:contain;
+
+    display:block;
+
+    margin:0 auto 20px;
 }
 
 .card h3{
-    font-size:28px;
-    margin-bottom:20px;
+    font-size:27px;
+
+    color:#3E2723;
+
+    margin-bottom:18px;
 }
 
 .card p{
     color:#666;
+
     line-height:1.7;
+
     margin-bottom:20px;
 }
 
 .card span{
     display:block;
-    font-size:24px;
+
     color:#C89B3C;
+
+    font-size:24px;
     font-weight:bold;
+
+    margin-top:auto;
     margin-bottom:25px;
+}
+
+
+/* =========================
+   About Section
+========================= */
+
+.about{
+    display:flex;
+    align-items:center;
+
+    gap:60px;
+
+    max-width:1400px;
+    margin:auto;
+
+    padding:100px 80px;
+}
+
+.about-image{
+    width:50%;
+}
+
+.about-image img{
+    width:100%;
+
+    display:block;
+
+    border-radius:28px;
+
+    box-shadow:0 20px 50px rgba(62,39,35,.15);
+}
+
+.about-text{
+    width:50%;
+}
+
+.about-text h2{
+    font-size:44px;
+    line-height:1.2;
+
+    color:#3E2723;
+
+    margin-bottom:25px;
+}
+
+.about-text p{
+    font-size:18px;
+    line-height:1.8;
+
+    color:#666;
+
+    margin-bottom:20px;
+}
+
+.about-text .btn{
+    margin-top:15px;
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width:900px){
+
+    .navbar{
+        padding:0 30px;
+    }
+
+    .hero{
+        padding:60px 30px;
+        gap:40px;
+    }
+
+    .hero-text h1{
+        font-size:48px;
+    }
+
+    .menu-section{
+        padding:80px 30px;
+    }
+
+    .about{
+        padding:80px 30px;
+        gap:40px;
+    }
+
+    .about-text h2{
+        font-size:38px;
+    }
+
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width:700px){
+
+    /* Header */
+
+    .navbar{
+        height:auto;
+
+        padding:20px;
+
+        flex-direction:column;
+
+        gap:20px;
+    }
+
+    .logo{
+        font-size:24px;
+    }
+
+    .menu{
+        gap:18px;
+
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .menu a{
+        font-size:15px;
+    }
+
+
+    /* Hero */
+
+    .hero{
+        min-height:auto;
+
+        flex-direction:column;
+
+        padding:60px 20px;
+
+        text-align:center;
+    }
+
+    .hero-text{
+        width:100%;
+    }
+
+    .hero-text h1{
+        font-size:42px;
+    }
+
+    .hero-text p{
+        font-size:18px;
+
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .hero-image{
+        width:100%;
+    }
+
+    .hero-image img{
+        max-width:500px;
+    }
+
+
+    /* Menu */
+
+    .menu-section{
+        padding:70px 20px;
+    }
+
+    .menu-section h2{
+        font-size:36px;
+    }
+
+    .card{
+        width:100%;
+        max-width:340px;
+    }
+
+
+    /* About */
+
+    .about{
+        flex-direction:column;
+
+        padding:70px 20px;
+
+        text-align:center;
+    }
+
+    .about-image,
+    .about-text{
+        width:100%;
+    }
+
+    .about-image{
+        max-width:500px;
+    }
+
+    .about-text h2{
+        font-size:36px;
+    }
+
+    .about-text p{
+        font-size:17px;
+    }
+
+}
+/* =========================
+   Testimonials
+========================= */
+
+.testimonials{
+    padding:100px 80px;
+
+    text-align:center;
+
+    background:white;
+}
+
+.testimonials h2{
+    font-size:44px;
+
+    color:#3E2723;
+
+    margin-bottom:15px;
+}
+
+.section-subtitle{
+    color:#777;
+
+    font-size:18px;
+
+    margin-bottom:55px;
+}
+
+.testimonial-cards{
+    max-width:1100px;
+    margin:auto;
+
+    display:flex;
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+.testimonial-card{
+    width:320px;
+
+    padding:35px;
+
+    background:#F8F5F2;
+
+    border-radius:24px;
+
+    box-shadow:0 10px 30px rgba(62,39,35,.08);
+
+    transition:.3s;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 40px rgba(62,39,35,.14);
+}
+
+.stars{
+    color:#C89B3C;
+
+    font-size:22px;
+
+    margin-bottom:20px;
+}
+
+.testimonial-card p{
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+}
+
+.testimonial-card h3{
+    color:#3E2723;
+
+    font-size:20px;
+}
+
+
+/* =========================
+   Contact
+========================= */
+
+.contact{
+    padding:100px 20px;
+
+    background:#F8F5F2;
+
+    text-align:center;
+}
+
+.contact-content{
+    max-width:700px;
+
+    margin:auto;
+}
+
+.contact h2{
+    font-size:44px;
+
+    color:#3E2723;
+
+    margin-bottom:20px;
+}
+
+.contact-content > p{
+    color:#666;
+
+    font-size:19px;
+    line-height:1.8;
+
+    margin-bottom:30px;
+}
+
+.contact-info{
+    margin-bottom:35px;
+}
+
+.contact-info p{
+    color:#555;
+
+    margin:12px 0;
+
+    font-size:17px;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+.footer{
+    background:#2B1D16;
+
+    color:white;
+
+    padding:50px 20px;
+
+    text-align:center;
+}
+
+.footer-content{
+    max-width:1100px;
+
+    margin:auto;
+}
+
+.footer-logo{
+    font-size:26px;
+    font-weight:bold;
+
+    margin-bottom:25px;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:25px;
+}
+
+.footer-links a{
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#C89B3C;
+}
+
+.footer p{
+    color:#cfc7c2;
+
+    font-size:14px;
+}
+
+
+/* =========================
+   New Sections - Mobile
+========================= */
+
+@media (max-width:700px){
+
+    .testimonials{
+        padding:70px 20px;
+    }
+
+    .testimonials h2{
+        font-size:36px;
+    }
+
+    .testimonial-card{
+        width:100%;
+        max-width:340px;
+    }
+
+    .contact{
+        padding:70px 20px;
+    }
+
+    .contact h2{
+        font-size:36px;
+    }
+
 }
