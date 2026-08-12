@@ -6,7 +6,9 @@ A modern and responsive coffee shop landing page created as a front-end web deve
 
 This project is deployed with GitHub Pages.
 
-> Live demo link will be added here.
+> ## 🌐 Live Demo
+
+[View Coffee Montreal Live](https://mozhgan-dev.github.io/coffee-montreal/)
 
 ## ✨ Features
 
